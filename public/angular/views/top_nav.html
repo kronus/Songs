@@ -1,0 +1,17 @@
+<nav>
+    <button ng-click="go('/');" class="btn btn-success">Read</button>
+    <button ng-click="go('/create');" class="btn btn-primary">Create</button>
+    <button ng-click="go('/update');" class="btn btn-warning">Update</button>
+    <button ng-click="go('/delete');" class="btn btn-danger">Delete</button>
+</nav>
+<ul ng-if="$scope.loc == 'create'" ng-show="true" class="pagination" ng-model="$scope.songData">
+    <li><a href="javascript://" ng-click="getPgn(1)"> &lt;&lt; </a> </li>
+    <li class="active"><a href="javascript://" ng-click="getPgn(songData.current_page)"><% songData.current_page %></a> </li>
+    <li><a href="javascript://" ng-click="getPgn(songData.current_page+1)" ng-if="(songData.current_page+1) < (songData.last_page)"><% songData.current_page+1 %></a> </li>
+    <li><a href="javascript://" ng-click="getPgn(songData.current_page+2)" ng-if="(songData.current_page+2) < (songData.last_page)"><% songData.current_page+2 %></a> </li>
+    <li><a href="javascript://" ng-click="getPgn(songData.current_page+3)" ng-if="(songData.current_page+3) < (songData.last_page)"><% songData.current_page+3 %></a> </li>
+    <li><a href="javascript://" ng-click="getPgn(songData.current_page+4)" ng-if="(songData.current_page+4) < (songData.last_page)"><% songData.current_page+4 %></a> </li>
+    <li><a href="javascript://" ng-click="getPgn(songData.current_page+5)" ng-if="(songData.current_page+5) < (songData.last_page)"><% songData.current_page+5 %></a> </li>
+    <li><a href="javascript://" ng-click="getPgn(songData.current_page+6)" ng-if="(songData.current_page+6) < (songData.last_page)"> &gt; </a> </li>
+    <li><a href="javascript://" ng-click="getPgn(songData.last_page)"> &gt;&gt; </a> </li>
+</ul>
