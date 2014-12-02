@@ -5,10 +5,14 @@
 .songContent strong { font-weight: 900; }
 .songContent p { margin: 10px 0 0 0; word-wrap: break-word;}
 .songContent a { color: #4aa6ed; }
-.col-md-8{width: 86%;}
+
+/* tweek bootstrap to my liking */
+.col-md-8{width: 86%; padding-top: 3%;}
+.col-md-offset-2{margin-left: 0%}
+
 .create-padding{padding-top: 2%;}
 .formfield{vertical-align: top;}
 label{width: 6.250em;}
 input{width: 31.875em;}
 textarea{height: 6.188em; width: 31.875em;}
-nav{padding-bottom: 2%;}
+nav{padding-bottom: 2%; margin: 0 auto; width: 300px;}
