@@ -7,7 +7,7 @@
 .songContent a { color: #4aa6ed; }
 
 /* tweek bootstrap to my liking */
-.col-md-8{width: 86%; padding-top: 3%;}
+.col-md-8{width: 100%; padding-top: 3%;}
 .col-md-offset-2{margin-left: 0%}
 
 .create-padding{padding-top: 2%;}
